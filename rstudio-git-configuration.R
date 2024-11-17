@@ -17,7 +17,7 @@ usethis::create_github_token()
 ## credentials::set_github_pat() (in line 34) might store your PAT in a memory cache that
 ## expires after 15 minutes or when the computer is rebooted. You thus may wish to do 
 ## extend the cache timeout to match the PAT validity period:
-usethis::use_git_config(credential.helper="cache --timeout=2600000")
+usethis::use_git_config(credential.helper="cache --timeout=2592000000")
 
 pat <- rstudioapi::showPrompt("Github setup","What is your personal access token? ")
 
@@ -25,7 +25,7 @@ pat <- rstudioapi::showPrompt("Github setup","What is your personal access token
 credentials::set_github_pat(pat)
 
 ## or store it manually in '.Renviron':
-usethis::edit_r_environ()
+# usethis::edit_r_environ()
 ## store your personal access token in the file that opens in your editor with:
 ## GITHUB_PAT=xxxyyyzzz
 ## and make sure '.Renviron' ends with a newline
