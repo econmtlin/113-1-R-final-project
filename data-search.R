@@ -3,3 +3,5 @@ openDataSearchUrl <- "https://data.gov.tw/datasets/search?p=1&size=10&s=_score_d
 
 # 台中市職場人力吃緊度分析(Job market tightness analysis) -----
 taichungJobMarket <- read_csv("2015_01_1343-08-03-2_臺中市就業服務之求職、求才及推介就業人數－按職業分.csv")
+
+glimpse(taichungJobMarket)
